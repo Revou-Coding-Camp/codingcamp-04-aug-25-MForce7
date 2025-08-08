@@ -1,0 +1,6 @@
+/* @import "tailwindcss"; */
+/* @layer base {
+    tr td{
+        @apply border color-red-500 text-white;
+    }
+} */

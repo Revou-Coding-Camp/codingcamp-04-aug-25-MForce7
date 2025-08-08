@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="style.css" > -->
+    <style type="tailwindcss">
+        @layer base {
+            div{
+                @apply border bg-red-500 text-white;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>  
+    <div class="bg-gray-900 w-screen h-screen flex justify-between p-5">
+        <div id="leftSection" class="flex w-[70%] h-full rounded-xl flex flex-col justify-between mr-5">
+            <div id="leftTop" class="bg-white flex w-full h-[30%] rounded-xl mb-5"></div>
+            <div id="leftBottom" class="flex w-full h-[70%] rounded-xl justify-between">
+                
+                
+                <div id="taskList" class="bg-white flex w-[95%] h-full rounded-xl mr-5">
+                    <table border="1" cellpadding="0" cellspacing="0" class="w-full h-fit border">
+                        <thead class="bg-[#CFF4D2]">
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Barang</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text center">
+                        <tr>
+                            <td>1</td>
+                            <td>Pulpen</td>
+                            <td>10</td>
+                            <td>Rp 2.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Buku Tulis</td>
+                            <td>5</td>
+                            <td>Rp 5.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Penghapus</td>
+                            <td>7</td>
+                            <td>Rp 1.500</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                
+                
+                </div>
+                <div id="navigation" class="bg-white flex w-[5%] h-full rounded-xl"></div>
+            </div>
+        </div>
+        <div id="rightSection" class="bg-white flex w-[30%] h-full rounded-xl"></div>
+    </div>
+</body>
+</html>
