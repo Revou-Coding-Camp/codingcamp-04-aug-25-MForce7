@@ -22,3 +22,9 @@
 document.getElementById("addItem").addEventListener("click", ()=> {
     alert("sdsdfsefseff")
 })
+
+document.getElementById("taskForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // mencegah reload halaman
+            const nama = document.getElementById("taskTitle").value;
+            alert("Halo, " + nama);
+        });
